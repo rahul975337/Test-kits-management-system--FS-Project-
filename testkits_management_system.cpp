@@ -62,11 +62,11 @@ void testKits ::view_testKits()
     ind.close();
     int ch;
     int s = num_of_test_kits - i;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t          TEST KITS MANAGEMENT SYSTEM           \n\n"
          << endl;
 
     cout << "\n\t\t\t-----------------------------------------------\n";
-    cout << "\t\t\t\tTest Kits STATISTICS";
+    cout << "\t\t\t\tTEST KITS STATISTICS";
     cout << "\n\t\t\t-----------------------------------------------\n\n";
     cout << "\t\t 1. Enter new stock of test kits        \t\t\t2.View available test kits\n\t\t\t\t\t 3. Go Back" << endl;
     cin >> ch;
@@ -92,7 +92,7 @@ void testKits ::view_testKits()
         menu();
     default:
         system("cls");
-        cout << "\n The option you entered  is not valid" << endl;
+        cout << "\n The option you entered is not valid" << endl;
         menu();
     }
     file.close();
@@ -114,7 +114,7 @@ void testKits::show_list()
 void testKits::search_data()
 {
     testKits item;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t         TEST KITS MANAGEMENT SYSTEM            \n\n"
          << endl;
 
     cout << "\n\t\t\t-----------------------------------------\n";
@@ -123,13 +123,13 @@ void testKits::search_data()
     cout << "From which option you want to perform searching " << endl;
     cout << "\n\t\t 1. By aadhar \t\t\t 2. By Age " << endl;
     cout << "\n\t\t 3. By symptoms \t\t 4. By gender " << endl;
-    cout << "\n\n\t\tEnter your choice ...............";
+    cout << "\n\n\t\tEnter your choice ";
     int ch;
     cin >> ch;
     switch (ch)
     {
     case 1:
-        system("cls");
+        system("cls"); //clear screen
         search_by_aadhar();
         getch();
         break;
@@ -159,7 +159,7 @@ void testKits::search_by_aadhar()
     ifstream in("testKitstrial.txt");
     int flag = 0;
     string adh_num;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t        TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
 
     cout << "\n\t\t\t-----------------------------------------\n";
@@ -190,7 +190,7 @@ void testKits::search_by_age()
     ifstream in("testKitstrial.txt");
     int flag = 0;
     int a, p = 0;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test  Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
     cout << "\n\t\t\t-----------------------------------------\n";
     cout << "\t\t\t\t Search by age";
@@ -222,7 +222,7 @@ void testKits::search_by_symptoms()
     int flag = 0;
     int p = 0;
     string prof;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test  Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
 
     cout << "\n\t\t\t-----------------------------------------\n";
@@ -256,9 +256,8 @@ void testKits::search_by_gender()
     int flag = 0;
     char g;
     int p = 0;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test  Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
-
     cout << "\n\t\t\t-----------------------------------------n";
     cout << "\t\t\t\t Search by Gender";
     cout << "\n\t\t\t-----------------------------------------n\n";
@@ -285,7 +284,7 @@ void testKits::search_by_gender()
 }
 void testKits::setdata()
 {
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test  Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
 
     cout << "\n\t\t\t--------------------------------------------\n";
@@ -315,7 +314,7 @@ void testKits::setdata()
 }
 void testKits::showdata()
 {
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 Test Kits MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
 
     cout << "\n\t\t\t-----------------------------------------\n";
@@ -341,11 +340,10 @@ void testKits::add_new()
     getch();
     outin.close();
 }
-
 void menu()
 {
     system("cls");
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 TEST KITS MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
 
     cout << "\n\t\t\t------------------------------------\n";
@@ -354,15 +352,13 @@ void menu()
     cout << "\n\t\t1: Add NEW PATIENT\t\t\t 2: View Test Kits data" << endl;
     cout << "\n\t\t3: search   \t\t\t\t 4: exit" << endl;
 }
-
 int main()
 {
     testKits obj;
     int k = 3;
     int num_vac;
-    cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 TEST KITS MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+    cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
          << endl;
-
     cout << "\t\n\n Press enter key to continue.............  " << endl;
     getch();
 B:
@@ -394,7 +390,7 @@ B:
     int ch;
     do
     {
-        cout << "\n\n\t\t\xB3\xB2=\xB2=\xB2-\xB3 TEST KITS MANAGEMENT SYSTEM  \xB3\xB2=\xB2=\xB2-\xB3\n\n"
+        cout << "\n\n\t\t             TEST KITS MANAGEMENT SYSTEM              \n\n"
              << endl;
         cout << "\t\t\t\t\t\t Made by - Rahul & Siddharth " << endl;
         menu();
